@@ -32,20 +32,21 @@ endif()
 include_directories(${INCLUDES})
 
 #add_definitions(-std=c99 -lm)
-add_definitions(-Wextra -Wall -msse4.1 -pedantic -g -O3  -std=c99 -L/path/to/libs)
-#set(CMAKE_C_CLAGS "${CMAKE_C_FLAGS} -Wextra -Wall -pedantic -O3 -std=c99 -g")
+#add_definitions(-Wextra -Wall -msse4.1 -pedantic -g -O3  -std=c99 -L/path/to/libs)
+set(CMAKE_C_CLAGS "-std=c99 ${CMAKE_C_FLAGS} -Wextra -Wall -pedantic -O3 -g")
 
 # Add a library with common sources
 #add_library(common fst.f)
 
 # The C based poisson application
-add_executable(poisson main.c parallelPoisson.c parallelPoisson.h serialPoisson.c serialPoisson.h)
+add_executable(poisson poisson.c)# main.c parallelPoisson.c parallelPoisson.h serialPoisson.c serialPoisson.h)
 
 # The Fortran based poisson application
 #add_executable(poisson-f poisson.f90)
 
 # Link to libraries
-target_link_libraries(poisson m fst ${DEPLIBS_C})
+#target_link_libraries(poisson m fst ${DEPLIBS_C})
+target_link_libraries(poisson fst ${DEPLIBS_C})
 link_directories(${CMAKE_SOURCE_DIR})
 
 # We want to link this as a C program

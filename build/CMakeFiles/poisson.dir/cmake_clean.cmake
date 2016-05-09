@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/poisson.dir/main.c.o"
-  "CMakeFiles/poisson.dir/parallelPoisson.c.o"
-  "CMakeFiles/poisson.dir/serialPoisson.c.o"
+  "CMakeFiles/poisson.dir/poisson.c.o"
   "poisson.pdb"
   "poisson"
 )

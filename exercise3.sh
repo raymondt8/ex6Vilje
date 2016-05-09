@@ -5,8 +5,20 @@ output="exercise3.txt"
 
 N=16384
 PT=36
-for i in 1 2 4 8 16; do
 	
-	mpirun -np $PT/i omplace -nt i ./poisson $N > $Variabel
+	mpirun -np 32 omplace 1  ./poisson $N > $Variabel
 	fprintf >> $Variable 
-done
+
+	mpirun -np 16 omplace 2  ./poisson $N > $Variabel
+	fprintf >> $Variable 
+
+	mpirun -np 8 omplace 4  ./poisson $N > $Variabel
+	fprintf >> $Variable 
+
+	mpirun -np 4 omplace 8  ./poisson $N > $Variabel
+	fprintf >> $Variable 
+
+	mpirun -np 2 omplace 16  ./poisson $N > $Variabel
+	fprintf >> $Variable 
+
+
