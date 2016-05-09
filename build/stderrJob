@@ -1,0 +1,22 @@
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c: In function ‘initMPIApplication’:
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c:73: warning: unused parameter ‘argc’
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c:73: warning: unused parameter ‘argv’
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c:73: warning: unused parameter ‘WorldComm’
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c: In function ‘closeMPIApplication’:
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c:86: warning: unused parameter ‘comm’
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c: In function ‘createVector’:
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c:99: error: ‘vector_t’ has no member named ‘comm’
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c: In function ‘createVectorMPI’:
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c:115: error: ‘vector_t’ has no member named ‘comm’
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c: In function ‘createColumnMatrixMPI’:
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c:135: error: ‘columnMatrix_t’ has no member named ‘comm’
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c: In function ‘mpiColumnMatrixTranspose’:
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c:306: error: ‘columnMatrix_t’ has no member named ‘comm’
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c: In function ‘findAndPrintUmax’:
+/home/ntnu/raymont/ex6Vilje/parallelPoisson.c:319: error: ‘columnMatrix_t’ has no member named ‘comm’
+make[2]: *** [CMakeFiles/poisson.dir/parallelPoisson.c.o] Error 1
+make[1]: *** [CMakeFiles/poisson.dir/all] Error 2
+make: *** [all] Error 2
+MPI: r2i1n8: 0xf600005719f565: ./poisson: error while loading shared libraries: libmpi.so.12: cannot open shared object file: No such file or directory
+MPI: could not run executable (case #4)
+/var/spool/PBS/mom_priv/jobs/6206404.service2.SC: line 25:  7741 Killed                  mpirun -np $P omplace -nt $T ./poisson $N >> jobResult0.txt

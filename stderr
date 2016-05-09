@@ -1,0 +1,2 @@
+/var/spool/PBS/mom_priv/jobs/6165940.service2.SC: line 22: syntax error near unexpected token `for'
+/var/spool/PBS/mom_priv/jobs/6165940.service2.SC: line 22: `	for P in 1 2 4 8 16 32 do'

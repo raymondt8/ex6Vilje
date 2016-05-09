@@ -1,0 +1,31 @@
+-- The C compiler identification is GNU 4.3.4
+-- The CXX compiler identification is GNU 4.3.4
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Unable to determine MPI from MPI driver /sw/sgi/mpt/mpt-2.06/bin/mpicc
+-- Could NOT find MPI_C (missing:  MPI_C_LIBRARIES MPI_C_INCLUDE_PATH) 
+-- Unable to determine MPI from MPI driver /sw/sgi/mpt/mpt-2.06/bin/mpicxx
+-- Could NOT find MPI_CXX (missing:  MPI_CXX_LIBRARIES MPI_CXX_INCLUDE_PATH) 
+-- Try OpenMP C flag = [-fopenmp]
+-- Performing Test OpenMP_FLAG_DETECTED
+-- Performing Test OpenMP_FLAG_DETECTED - Success
+-- Try OpenMP CXX flag = [-fopenmp]
+-- Performing Test OpenMP_FLAG_DETECTED
+-- Performing Test OpenMP_FLAG_DETECTED - Success
+-- Found OpenMP: -fopenmp  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ntnu/raymont/ex6Vilje/build
+Scanning dependencies of target poisson
+[ 25%] Building C object CMakeFiles/poisson.dir/main.c.o
+[ 50%] Building C object CMakeFiles/poisson.dir/parallelPoisson.c.o
